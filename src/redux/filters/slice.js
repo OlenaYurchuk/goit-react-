@@ -13,4 +13,4 @@ const filtersSlice = createSlice({
 })
 
 export const { filterContacts } = filtersSlice.actions;
-export default filtersSlice.reducer;
+export const filtersReducer =  filtersSlice.reducer;

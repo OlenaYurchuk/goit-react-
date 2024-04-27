@@ -1,15 +1,13 @@
 import { Suspense } from "react";
-import Navigation from "../Navigation/Navigation";
-import css from "../Layout/Layout.module.css";
+import { Outlet } from "react-router-dom";
+import AppBar from "../AppBar/AppBar";
 
-export default function Layout({ children }) {
+export default function Layout() {
   return (
     <div>
-      <header className={css.header}>
-        <Navigation />
-      </header>
-      <Suspense>
-        {children}
+      <AppBar />
+      <Suspense fallback={null}>
+        <Outlet />
       </Suspense>
     </div>
   )

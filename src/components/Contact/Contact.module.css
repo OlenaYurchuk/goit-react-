@@ -1,0 +1,26 @@
+.wrap {
+  border: transparent;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 6px 6px 6px #cbced1, -2px -2px 18px #fff;
+}
+
+.btn {
+  padding: 5px;
+  outline: 0 none;
+  cursor: pointer;
+  width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(51, 112, 255);
+  color: white;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: blue;
+}
